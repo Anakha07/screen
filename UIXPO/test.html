@@ -1,74 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Example of Bootstrap 3 Modals</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<linke rel="stylesheet" href="style.css">
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-	<div class="container">
-		<div class="row text-center">
-			<br><br>
-			<a href="#" class="btn btn-lg btn-success" data-toggle="modal" data-target="#basicModal">Click to open Modal</a>
-		</div>
-	</div>
-	<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-		<div class="modal-dialog" style="width:1200px;">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel"><b>Recurring Order Scheduler</b></h4>
-				</div>
-				<div class="modal-body">
-					<!-- table form -->
-					<FORM>
-						<TABLE>
-							<TR>
-								<TD>Event</TD>
-								<TD>Duration Length</TD>
-								<TD>Start Date</TD>
-								<TD>End Date</TD>
-								<TD>Select Dates</TD>
-								<TD>Pickup Time Window</TD>
-								<TD>Loads Per Day/Time</TD>
-								<TD>Transit Days</TD>
-								<TD>Delivery Time Window</TD>
-								<TD>Actions</TD>
-
-							</TR>
-
-							<TR>
-								<TD>Schedule-1</TD>
-								<TD> <select name="duration">
-                     <option value="volvo">2 weeks</option>
-                     <option value="saab">3 weeks</option>
-                     <option value="fiat">1 month</option>
-									   </select>
-								</TD>
-								<TD>
-
-								</TD>
-							</TR>
-
-						</TABLE>
-					</FORM>
-					<h3>Modal Body</h3>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-					<button type="button" class="btn btn-primary">Save</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
-
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Example of Bootstrap 3 Modals</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row text-center">
+            <br>
+            <br>
+            <a href="#" class="btn btn-lg btn-success" data-toggle="modal" data-target="#basicModal">Click to open Modal</a>
+         </div>
+      </div>
+      <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+         <div class="modal-dialog" style="width:100%;">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel"><b>Recurring Order Scheduler</b></h4>
+               </div>
+               <div class="modal-body">
+                  <!-- table form -->
+                  <FORM>
+                     <TABLE  style="width:100%;">
+                        <TR height="45">
+                           <TD style="width:30%;">Event</TD>
+                           <TD style="width:30%;">Duration Length</TD>
+                           <TD style="width:30%;">Start Date</TD>
+                           <TD style="width:30%;">End Date</TD>
+                           <TD style="width:30%;">Select Dates</TD>
+                           <TD style="width:30%;">Pickup Time Window</TD>
+                           <TD>Loads Per Day/Time</TD>
+                           <TD>Transit Days</TD>
+                           <TD>Delivery Time Window</TD>
+                           <TD>Actions</TD>
+                        </TR>
+                        <TR height="55">
+                           <TD>Schedule-1</TD>
+                           <TD>
+                              <select name="duration">
+                                 <option value="volvo">2 weeks</option>
+                                 <option value="saab">3 weeks</option>
+                                 <option value="fiat">1 month</option>
+                              </select>
+                           </TD>
+                           <TD >
+                              <input name="txtName" id="txtName">
+                              <span class="fa fa-calendar errspan"></span>
+                           </TD>
+                           <TD>
+                              <input name="txtName" id="txtName">
+                              <span class="fa fa-calendar errspan"></span>
+                           </TD>
+                           <TD>
+                              <select name="duration">
+                                 <option value="volvo"></option>
+                                 <option value="saab"></option>
+                                 <option value="fiat"></option>
+                              </select>
+                           </TD>
+                           <TD>
+                              <input name="txtName" id="txtName">
+                              <span class="fa fa-clock-o errspan"></span>
+                              <input name="txtName" id="txtName">
+                              <span class="fa fa-clock-o errspan"></span>
+               </div>
+               </TD>
+               <TD>
+               <input type="text">
+               </TD>
+               <TD>
+               <input type="text">
+               </TD>
+               <TD>
+               <input name="txtName" id="txtName">
+               <span class="fa fa-clock-o errspan"></span>
+               <input name="txtName" id="txtName">
+               <span class="fa fa-clock-o errspan"></span>
+            </div>
+            </TD>
+            <TD>
+            <i class="fa fa-ellipsis-v"></i>
+            </TD>
+            </TR>
+            </TABLE>
+            </FORM>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Save</button>
+         </div>
+      </div>
+      </div>
+      </div>
+   </body>
 </html>
