@@ -9,23 +9,42 @@ h2 {
   text-align: center;
   padding-top: 130px;
 }
+input {
+    line-height: 20px;
+}
+input,select {
+    width: 100%;
+    box-sizing: border-box;
 
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
 
 table tr{
-
+ /*hr after every row*/
   border-bottom:1px solid grey;
 }
-td{
+td {
 
   padding: 5px;
 }
 
+
+.fa-ellipsis-v{
+padding-left: 28px;
+}
+/*for styling calendar and clock icon*/
 .errspan {
     float: right;
     margin-right: 6px;
     margin-top: -20px;
     position: relative;
     z-index: 2;
+}
 
-
+.scheduler{
+  color: blue;
+   font-weight: lighter;
 }
