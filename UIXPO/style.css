@@ -25,6 +25,8 @@ table{
 table tr{
  /*hr after every row*/
   border-bottom:1px solid grey;
+  border-width: thin;
+border-color: #808080;
 }
 td {
 
