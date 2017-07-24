@@ -22,6 +22,13 @@
          	jQuery(".chosen").chosen();
          });
       </script>
+			<select class="chosen" multiple="true" style="width:400px;">
+				<option>Choose...</option>
+				<option>jQuery</option>
+				<option selected="selected">MooTools</option>
+				<option>Prototype</option>
+				<option selected="selected">Dojo Toolkit</option>
+			</select>
       <div class="container">
          <div class="row text-center">
             <br>
@@ -70,11 +77,13 @@
                               <span class="fa fa-calendar errspan"></span>
                            </TD>
                            <TD>
-                              <select name="duration" style=" height:25px;">
-                                 <option value="one"></option>
-                                 <option value="two"></option>
-                                 <option value="three"></option>
-                              </select>
+														 <select class="chosen" multiple="true" style="width:100%;">
+															 <option>Choose...</option>
+															 <option>jQuery</option>
+															 <option selected="selected">MooTools</option>
+															 <option>Prototype</option>
+															 <option selected="selected">Dojo Toolkit</option>
+														 </select>
                            </TD>
                            <TD  class="widname1">
                               <input name="txtName"  >
