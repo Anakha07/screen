@@ -15,12 +15,31 @@
       <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.jquery.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.css">
+
+
    </head>
    <body>
       <script type="text/javascript">
+
+      function myFunction() {
+     console.log("h");
+      var x = document.getElementById('myDIV');
+
+      if (x.style.display === 'none') {
+          x.style.display = 'block';
+
+      } else {
+          x.style.display = 'none';
+      }
+  }
+
          jQuery(document).ready(function(){
          	jQuery(".chosen").chosen({ width: '100%', height:'25px !important;' });
+
+
          });
+
+
       </script>
 
       <div class="container">
@@ -31,7 +50,7 @@
          </div>
       </div>
       <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-         <div class="modal-dialog" style="width:88%;">
+         <div class="modal-dialog" style="width:93%;">
             <div class="modal-content">
                <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -43,7 +62,7 @@
                      <TABLE class="tabelem" >
                         <TR >
                            <TD style="width:13%" class="widname3">Event</TD>
-                           <TD style="width:19%;" class="widname4">Duration Length</TD>
+                           <TD style="width:23%;" class="widname4">Duration Length</TD>
                            <TD style="width:15%;">Start Date</TD>
                            <TD style="width:15%;">End Date</TD>
                            <TD style="width:40%;">Select Days</TD>
@@ -71,7 +90,7 @@
                               <span class="fa fa-calendar errspan"></span>
                            </TD>
                            <TD style="height:25px;">
-														 <select class="chosen " multiple="true" style="width:100%;" data-placeholder="Select..." >
+														 <select multiple class="chosen " multiple="true" style="width:100%;" data-placeholder="Select..." >
 															 <option class="searchstyle">Choose...</option>
 															 <option class="searchstyle"selected="True">Mon</option>
 															 <option class="searchstyle">Tue</option>
@@ -160,7 +179,15 @@
                               <span class="fa fa-clock-o errspan"></span>
                            </TD>
                            <TD>
-                              <i class="fa fa-ellipsis-v "></i>
+                              <span onclick="myFunction()">
+                              <i class="fa fa-ellipsis-v  pop" ></i>
+                              </span>
+                              <span id="myDIV" class="map_infobox" style="display:none">
+                              <p>Remove schedule</p>
+                            </span>
+
+
+
                            </TD>
                         </TR>
                      </TABLE>
